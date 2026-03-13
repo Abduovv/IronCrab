@@ -1,4 +1,4 @@
-# 🦀 IronCrab
+# 🦀 *IronCrab — because crabs don't skip leg day.*
 
 <img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/50301763-b937-4d65-b3e2-f5d41bd50ebb" />
 
@@ -137,6 +137,3 @@ Exercises are fetched from the **[API Ninjas Exercises API](https://api-ninjas.c
 - [ ] Optimizer — score and rank generated plans
 
 ---
-
-
-*IronCrab — because crabs don't skip leg day.*
