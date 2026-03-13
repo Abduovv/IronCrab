@@ -1,5 +1,6 @@
 # 🦀 IronCrab
 
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/50301763-b937-4d65-b3e2-f5d41bd50ebb" />
 
 
 > *Because your compiler has better form than your spotter.*
