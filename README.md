@@ -103,32 +103,6 @@ cargo run
 
 ```
 
-
-
----
-
-
-
-## Dependencies
-
-
-
-```toml
-
-reqwest  = { version = "0.12", features = ["json"] }  # HTTP client
-
-serde    = { version = "1",    features = ["derive"] } # JSON parsing
-
-tokio    = { version = "1",    features = ["full"] }   # async runtime
-
-anyhow   = "1"                                         # error handling
-
-dotenvy  = "0.15"                                      # .env loading
-
-```
-
-
-
 ---
 
 
