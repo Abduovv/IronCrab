@@ -37,22 +37,14 @@ A command-line workout program builder written in Rust. Tell IronCrab your goals
 
 
 
-| Phase | Description | Status |
-
-|---|---|---|
-
-| 1 | Models — Exercise, MuscleGroup, Equipment, Difficulty | ✅ Done |
-
-| 2 | Scraper — fetch from API Ninjas, parse into models | ✅ Done |
-
-| 3 | Database — persist exercises to SQLite | 🔨 In progress |
-
-| 4 | CLI — `ironcrab sync`, `ironcrab plan`, `ironcrab log` | 🔲 Planned |
-
-| 5 | Planner — constraint-based weekly program generator | 🔲 Planned |
-
-| 6 | Progress tracking — log sessions, track over time | 🔲 Planned |
-
+| Phase | Description                                            | Status         |
+| ----- | ------------------------------------------------------ | -------------- |
+| 1     | Models — Exercise, MuscleGroup, Equipment, Difficulty  | ✅ Done         |
+| 2     | Scraper — fetch from API Ninjas, parse into models     | ✅ Done         |
+| 3     | Database — persist exercises to SQLite                 | 🔨 In progress |
+| 4     | CLI — `ironcrab sync`, `ironcrab plan`, `ironcrab log` | 🔲 Planned     |
+| 5     | Planner — constraint-based weekly program generator    | 🔲 Planned     |
+| 6     | Progress tracking — log sessions, track over time      | 🔲 Planned     |
 
 
 ---
