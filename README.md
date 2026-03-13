@@ -51,62 +51,6 @@ A command-line workout program builder written in Rust. Tell IronCrab your goals
 
 
 
-## Project Structure
-
-
-
-```
-
-iron-crab/
-
-├── src/
-
-│   ├── main.rs              ← entry point
-
-│   ├── models/              ← data types (Exercise, Plan, WorkoutDay...)
-
-│   │   ├── mod.rs
-
-│   │   ├── exercise.rs
-
-│   │   ├── muscle_group.rs
-
-│   │   ├── equipment.rs
-
-│   │   ├── difficulty.rs
-
-│   │   ├── plan.rs
-
-│   │   └── workout.rs
-
-│   ├── scraper/             ← fetches data from API Ninjas
-
-│   │   ├── mod.rs
-
-│   │   └── api_ninjas.rs
-
-│   ├── db/                  ← SQLite persistence (coming soon)
-
-│   ├── planner/             ← program generation logic (coming soon)
-
-│   ├── cli.rs               ← command definitions (coming soon)
-
-│   └── display/             ← terminal output formatting (coming soon)
-
-├── .env                     ← API key (never commit this)
-
-├── .gitignore
-
-└── Cargo.toml
-
-```
-
-
-
----
-
-
-
 ## Getting Started
 
 
@@ -148,12 +92,6 @@ Create a `.env` file in the project root:
 echo "NINJAS_API_KEY=your_api_key_here" > .env
 
 ```
-
-
-
-> ⚠️ Never commit your `.env` file. It is already in `.gitignore`.
-
-
 
 ### Run
 
@@ -201,38 +139,7 @@ dotenvy  = "0.15"                                      # .env loading
 
 Exercises are fetched from the **[API Ninjas Exercises API](https://api-ninjas.com/api/exercises)**.
 
-
-
-Each exercise includes:
-
-
-
-| Field | Example |
-
-|---|---|
-
-| `name` | `"Barbell Curl"` |
-
-| `muscle` | `"biceps"` |
-
-| `type` | `"strength"` |
-
-| `difficulty` | `"intermediate"` |
-
-| `equipments` | `["barbell"]` |
-
-| `instructions` | Full text instructions |
-
-| `safety_info` | Safety guidance |
-
-
-
-16 muscle groups covered: biceps, triceps, chest, lats, middle back, lower back, shoulders, quadriceps, hamstrings, calves, glutes, abdominals, forearms, traps, abductors, adductors.
-
-
-
 ---
-
 
 
 ## Roadmap
@@ -255,34 +162,7 @@ Each exercise includes:
 
 - [ ] Optimizer — score and rank generated plans
 
-
-
 ---
-
-
-
-## Why Rust?
-
-
-
-IronCrab is a learning project. The goal is to build something genuinely useful while exploring Rust's type system, error handling, async runtime, and CLI tooling — all in one project that touches HTTP, serialization, databases, and algorithms.
-
-
-
----
-
-
-
-## License
-
-
-
-MIT — use it, fork it, build on it.
-
-
-
----
-
 
 
 *IronCrab — because crabs don't skip leg day.*
