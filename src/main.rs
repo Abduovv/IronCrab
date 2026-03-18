@@ -4,15 +4,15 @@ mod scraper;
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
-    dotenvy::dotenv().ok();
-
     println!("Fetching all exercises...\n");
-    let exercises = scraper::api_ninjas::fetch_all_exercises().await?;
+    let exercises: Vec<models::Exercise> = scraper::api_source::fetch_all_exercises().await?;
 
     println!("\n--- Results ---");
     for ex in &exercises {
-        println!("{} | {:?} | {:?} | {:?}", 
-            ex.name, ex.primary, ex.equipment, ex.difficulty);
+        println!(
+            "{} | {:?} | {:?} | {:?}",
+            ex.name, ex.primary, ex.equipment, ex.difficulty
+        );
     }
 
     println!("\nTotal exercises fetched: {}", exercises.len());

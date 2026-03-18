@@ -1,1 +1,1 @@
-pub mod api_ninjas;
+pub mod api_source;

@@ -1,11 +1,9 @@
-use crate::models::{Difficulty, Equipment, MuscleGroup};
+use crate::models::{Equipment, MuscleGroup};
 
 #[derive(Debug, Clone)]
 pub struct Exercise {
-    pub name:         String,
-    pub primary:      MuscleGroup,
-    pub equipment:    Equipment,
-    pub difficulty:   Difficulty,
+    pub name: String,
+    pub primary: MuscleGroup,
+    pub equipment: Equipment,
     pub instructions: String,
-    pub safety_info:  String,
 }
